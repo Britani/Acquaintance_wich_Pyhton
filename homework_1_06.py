@@ -6,3 +6,9 @@
 # программу, которая проверяет счастливость билета.
 # 385916 -> yes
 # 123456 -> no
+ticket_number = int(input('Введите шестизначный номер билета: '))
+if ticket_number // 100000 + (ticket_number // 10000) % 10 + (ticket_number // 1000) % 10 != (
+        ticket_number // 100) % 10 + (ticket_number // 10) % 10 + ticket_number % 10:
+    print('Билет не счастливый')
+else:
+    print('Билет счастливый!!!')

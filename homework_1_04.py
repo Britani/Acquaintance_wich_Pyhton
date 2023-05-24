@@ -6,3 +6,15 @@
 # 6 -> 1 4 1
 # 24 -> 4 16 4
 # 60 -> 10 40 10
+
+total_cranes = int(input('Введите количество всех журавликов: '))
+
+if total_cranes % 6 != 0:
+    print('Данное количество не удовлетворяет условию задачи')
+else:
+    cranes_peter = int(total_cranes / 6)
+    cranes_serg = cranes_peter
+    cranes_kate = total_cranes - cranes_peter - cranes_serg
+
+    print(
+        f'Из {total_cranes} журавликов --> {cranes_peter} сделал Петя, {cranes_serg} сделал Серёжа, {cranes_kate} сделала Катя.')
