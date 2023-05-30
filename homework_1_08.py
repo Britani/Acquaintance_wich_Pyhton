@@ -14,3 +14,5 @@ if (slice_chocolate % chocolate_bar_width == 0 or slice_chocolate % chocolate_ba
     print(f'{chocolate_bar_width}  {chocolate_bar_length} {slice_chocolate} --> Да')
 else:
     print(f'{chocolate_bar_width}  {chocolate_bar_length} {slice_chocolate} --> Нет')
+
+
